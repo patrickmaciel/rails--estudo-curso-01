@@ -15,3 +15,7 @@ puts 'Digite seu nome:'
 nome = gets.chomp
 
 puts "Seu nome #{nome}"
+
+puts 'Quantos anos você tem?'
+idade = gets.chomp
+puts "Sua idade é: #{idade}"

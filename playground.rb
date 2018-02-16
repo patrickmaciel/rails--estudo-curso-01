@@ -1,21 +1,5 @@
-puts 'Patrick' + ' ' + 'Maciel'
+def multiply(first_number, second_number)
+  first_number.to_f * second_number.to_f
+end
 
-firstname = 'Patrick'
-lastname = 'Maciel'
-
-puts firstname + ' ' + lastname
-puts "#{firstname} #{lastname}"
-
-puts 'Opa e ai \'single quotes\''
-puts "Opa e ai 'single quotes'"
-
-puts firstname.length
-
-puts 'Digite seu nome:'
-nome = gets.chomp
-
-puts "Seu nome #{nome}"
-
-puts 'Quantos anos você tem?'
-idade = gets.chomp
-puts "Sua idade é: #{idade}"
+puts multiply(5, 10)

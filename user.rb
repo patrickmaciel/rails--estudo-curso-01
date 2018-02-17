@@ -1,24 +1,19 @@
 class User
-  def initialize(name)
+  attr_accessor :name, :email
+
+  def initialize(name, email)
     # @ symbol for instance variable
     @name = name
+    @email = email
   end
 
   def run
     puts 'Ei! Estou suando...'
   end
-
-  def get_name
-    @name
-  end
-
-  def set_name(name)
-    @name = name
-  end
 end
 
-user1 = User.new('Patrick')
-user2 = User.new('Aline')
+user1 = User.new('Patrick', 'patrickmaciel.info@gmail.com')
+# user2 = User.new('Aline', 'aline@example.com')
 
 # puts User.ancestors
 
@@ -27,6 +22,6 @@ user2 = User.new('Aline')
 #
 # puts user1.run
 
-puts user1.get_name
-user1.set_name('Patrick Maciel')
-puts user1.get_name
+puts user1.name
+user1.name = 'Patrick Maciel'
+puts "#{user1.name} - #{user1.email}"
